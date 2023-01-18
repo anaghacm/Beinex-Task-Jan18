@@ -1,0 +1,30 @@
+@mixin d-container {
+    width: 100%;
+    max-width: 1250px;
+    margin: auto;
+    padding-left: $spacer-3;
+    padding-right: $spacer-3;
+}
+
+@mixin d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+@mixin d-section {
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+@mixin tablet {
+    @media (min-width:768px) and (max-width:991px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width:767px) {
+        @content;
+    }
+}
