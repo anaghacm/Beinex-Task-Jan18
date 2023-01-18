@@ -14,58 +14,76 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
 </head>
 
 <body>
     <!-- Header starts -->
     <header class="header-module">
-        <div class="top-nav">
-            <div class="social-links">
-                <a href="#" title="linkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#" title="facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#" title="twitter"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#" title="instagram"><i class="fa-brands fa-instagram"></i></a>
-                <span class="item-dot">
-                    <select id="language" name="language">
-                        <option value="english">English</option>
-                        <option value="arabic">Arabic</option>
-                    </select>
-                </span>
+        <div class="container top-nav">
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-6 social-links">
+                    <a href="#" title="linkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" title="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" title="twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" title="instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <span class="item-dot">
+                        <select id="language" name="language">
+                            <option value="english">English</option>
+                            <option value="arabic">Arabic</option>
+                        </select>
+                    </span>
+                </div>
+                <div class="col-lg-8 col-6 product-links">
+                    <ul>
+                        <li class="listitem item-dot"><a class="navlink" href="#" title="Tableau Free Trial">Tableau
+                                Free
+                                Trial</a></li>
+                        <li class="listitem item-dot"><a class="navlink" href="#" title="Alteryx Free Trial">Alteryx
+                                Free
+                                Trial</a></li>
+                        <li class="listitem item-dot"><a class="navlink" href="#" title="Auraa Free Trial ">Auraa Free
+                                Trial
+                            </a></li>
+                        <li class="listitem"><button class="btn-schedule"><i class="fa-solid fa-phone"></i> Schedule a
+                                call</button></li>
+                    </ul>
 
-            </div>
-            <div class="product-links">
-                <ul>
-                    <li class="listitem item-dot"><a class="navlink" href="#" title="Tableau Free Trial">Tableau Free
-                            Trial</a></li>
-                    <li class="listitem item-dot"><a class="navlink" href="#" title="Alteryx Free Trial">Alteryx Free
-                            Trial</a></li>
-                    <li class="listitem item-dot"><a class="navlink" href="#" title="Auraa Free Trial ">Auraa Free Trial
-                        </a></li>
-                    <li class="listitem"><button class="btn-schedule"><i class="fa-solid fa-phone"></i> Schedule a
-                            call</button></li>
-                </ul>
-
+                </div>
             </div>
         </div>
         <hr>
-        <nav>
+        <nav class="container">
+            <div class="row align-items-center">
+                <div class="col-2">
+                    <a class="logo" href="./index.html" title="Beinex"><img src="./assets/images/logo.png"
+                            alt="logo"></a>
+                </div>
+                <div class="col-10">
+                    <div class="items">
+                        <input type="checkbox" id="check">
+                        <label for="check" class="checkbtn"><i class="fa-solid fa-bars"></i></label>
+                        <ul>
+                            <li><a class="navlink" href="#" title="Services">Services</a></li>
+                            <li><a class="navlink" href="#" title="Partners">Partners</a></li>
+                            <li><a class="navlink" href="#" title="Industries">Industries</a></li>
+                            <li><a class="navlink" href="#" title="Company">Company</a></li>
+                            <li><a class="navlink" href="#" title="Events">Events</a></li>
+                            <li><a class="navlink" href="#" title="Careers">Careers</a></li>
+                            <li><a class="navlink" href="#" title="Blog">Blog</a></li>
+                            <li><a class="navlink" href="#" title="Training">Training</a></li>
+                        </ul>
 
-            <a class="logo" href="./index.html" title="Beinex"><img src="./assets/images/logo.png" alt="logo"></a>
-            <div class="items">
-                <input type="checkbox" id="check">
-                <label for="check" class="checkbtn"><i class="fa-solid fa-bars"></i></label>
-                <ul>
-                    <li><a class="navlink" href="#" title="Services">Services</a></li>
-                    <li><a class="navlink" href="#" title="Partners">Partners</a></li>
-                    <li><a class="navlink" href="#" title="Industries">Industries</a></li>
-                    <li><a class="navlink" href="#" title="Company">Company</a></li>
-                    <li><a class="navlink" href="#" title="Events">Events</a></li>
-                    <li><a class="navlink" href="#" title="Careers">Careers</a></li>
-                    <li><a class="navlink" href="#" title="Blog">Blog</a></li>
-                    <li><a class="navlink" href="#" title="Training">Training</a></li>
-                </ul>
-
+                    </div>
+                </div>
             </div>
+
 
         </nav>
     </header>
@@ -74,55 +92,66 @@
     <!-- Section starts -->
     <section class="banner-module" style="background-image: url('./assets/images/banner.jpg')">
         <div class="banner container">
-            <div class="banner-content">
-                <h3>Attention Writers: Now You Can Write for Beinex!</h3>
-                <h1>'Payment. Credit. Exposure'</h1>
-                <p>Yes, we have just gone article-hungry <br>
+            <div class="row">
+                <div class="col col-lg-6 banner-content">
+                    <h3>Attention Writers: Now You Can Write for Beinex!</h3>
+                    <h1>'Payment. Credit. Exposure'</h1>
+                    <p>Yes, we have just gone article-hungry <br>
 
-                    We need talented writers who can come up with high quality Articles and Blogs on
-                    all our service domains and more. It shall be a freelance arrangement. Selected
-                    articles would be paid for. <br>
+                        We need talented writers who can come up with high quality Articles and Blogs on
+                        all our service domains and more. It shall be a freelance arrangement. Selected
+                        articles would be paid for. <br>
 
-                    Just check out the Services section of Beinex website. Do the topics thrill you into
-                    writing? If yes, we may like to publish your writing.</p>
+                        Just check out the Services section of Beinex website. Do the topics thrill you into
+                        writing? If yes, we may like to publish your writing.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="writers-module" style="background-image: url('./assets/images/writers.PNG')">
         <div class="writers-content container">
-            <div class="lorem">
-                <p class="lorem-p">LOREM IPSUM</p>
-                <hr>
-            </div>
-            <h3>Who can write for Beinex?</h3>
-            <p>Virtually anyone:</p>
-            <div class="virtual">
-                <div>
-                    <i class="fa-solid fa-file-pen"></i>
-                    <p>Freelance writers</p>
-                </div>
-                <div>
-                    <i class="fa-solid fa-gear"></i>
-                    <p>Independent experts </p>
+            <div class="row">
 
+                <div class="col col-lg-6 lorem">
+                    <p class="lorem-p">LOREM IPSUM</p>
+                    <hr>
                 </div>
-                <div>
-                <i class="fa-solid fa-hand-holding-dollar"></i>
-                <p>Writers seeking to pocket an
-                    extra amount of income</p>
+            </div>
+            <div class="row">
+                <div class="col col-lg-6">
+                    <h3>Who can write for Beinex?</h3>
+                    <p>Virtually anyone:</p>
                 </div>
-                <div>
-                    <i class="fa-brands fa-blogger"></i>
-                    <p>Bloggers</p>
-                </div>
-                <div>
-                    <i class="fa-solid fa-chalkboard-user"></i>
-                    <p>Professionals</p>
-                </div>
-                <div>
-                    <i class="fa-solid fa-person-walking-with-cane"></i>
-                <p>Retired hands</p>
+            </div>
+            <div class="row">
+                <div class="col col-lg-6 virtual">
+                    <div>
+                        <i class="fa-solid fa-file-pen"></i>
+                        <p>Freelance writers</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-gear"></i>
+                        <p>Independent experts </p>
+
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                        <p>Writers seeking to pocket an <br>
+                            extra amount of income</p>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-blogger"></i>
+                        <p>Bloggers</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                        <p>Professionals</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-person-walking-with-cane"></i>
+                        <p>Retired hands</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -130,23 +159,26 @@
 
     <section class="dnc-module">
         <div class="container dnc-content">
-            <div class="dnc-text">
-                <div class="lorem">
-                    <p class="lorem-p">LOREM IPSUM</p>
-                    <hr>
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="lorem">
+                        <p class="lorem-p">LOREM IPSUM</p>
+                        <hr>
+                    </div>
+                    <h3>What we do Not care about:</h3>
+                    <div class="virtual">
+                        <p><i class="fa-solid fa-users-viewfinder"></i> Your background</p>
+                        <p><i class="fa-solid fa-venus-mars"></i> Your gender </p>
+                        <p><i class="fa-solid fa-globe"></i> Your nationality</p>
+                        <p><i class="fa-solid fa-graduation-cap"></i> Your qualification</p>
+                        <p><i class="fa-solid fa-suitcase"></i> Your employment status</p>
+                    </div>
                 </div>
-                <h3>What we do Not care about:</h3>
-                <div class="virtual">
-                    <p><i class="fa-solid fa-users-viewfinder"></i> Your background</p>
-                    <p><i class="fa-solid fa-venus-mars"></i> Your gender </p>
-                    <p><i class="fa-solid fa-globe"></i> Your nationality</p>
-                    <p><i class="fa-solid fa-graduation-cap"></i> Your qualification</p>
-                    <p><i class="fa-solid fa-suitcase"></i> Your employment status</p>
+                <div class="col-12 col-lg-6">
+                    <img src="./assets/images/dnc.jpg" alt="">
                 </div>
             </div>
-            <div class="dnc-img">
-                <img src="./assets/images/dnc.jpg" alt="">
-            </div>
+
         </div>
     </section>
 
@@ -154,36 +186,36 @@
         <div class="container">
             <div class="nocompromise-content">
                 <h3>What we do Not compromise on:</h3>
-                <div class="items">
-                    <div class="item-div">
+                <div class="row items">
+                    <div class="col-lg-4 col-md-6 col-12 item-div">
                         <img src="./assets/images/comp1.PNG" alt="">
                         <h4>Quality</h4>
                         <p>Error free content of coherence &
                             cohesion is foundational to writing</p>
                     </div>
-                    <div class="item-div">
+                    <div class="col-lg-4 col-md-6 col-12 item-div">
                         <img src="./assets/images/comp2.PNG" alt="">
                         <h4>Originality</h4>
                         <p>Imparting thorough bred insights
                             and information is central to writing</p>
                     </div>
-                    <div class="item-div">
+                    <div class="col-lg-4 col-md-6 col-12 item-div">
                         <img src="./assets/images/comp3.PNG" alt="">
                         <h4>Plagiarism</h4>
                         <p>Zero tolerance.</p>
                     </div>
-                    <div class="item-div">
+                    <div class="col-lg-4 col-md-6 col-12 item-div">
                         <img src="./assets/images/comp4.PNG" alt="">
                         <h4>Word - limit</h4>
                         <p>1500 words max. </p>
                     </div>
-                    <div class="item-div">
+                    <div class="col-lg-4 col-md-6 col-12 item-div">
                         <img src="./assets/images/comp5.PNG" alt="">
                         <h4>Dual submission</h4>
                         <p>We do not accept posts that have already
                             been submitted or published elsewhere.</p>
                     </div>
-                    <div class="item-div">
+                    <div class="col-lg-4 col-md-6 col-12 item-div">
                         <img src="./assets/images/comp6.PNG" alt="">
                         <h4>Authorship vs ownership</h4>
                         <p>You retain the authorship of the write up.
@@ -195,39 +227,45 @@
     </section>
 
     <section class="contact-module">
-        <div class="contact-text">
-            <div class="conttext">
-                <h3>Write for Beinex</h3>
-                <p>Explore writing gig for Cloud, Analytics, Artificial Intelligence, Machine Learning,
-                    and Automation. Submit your details below along with your write - up.</p>
+        <div class="row g-0">
+            <div class="col-12 col-lg-6 contact-text">
+                <div class="row conttext">
+                    <h3>Write for Beinex</h3>
+                    <p>Explore writing gig for Cloud, Analytics, Artificial Intelligence, Machine Learning,
+                        and Automation. Submit your details below along with your write - up.</p>
+                </div>
+                <div class="row">
+                    <div class="col-12 g-0">
+                        <img src="./assets/images/contact.PNG" alt="">
+                    </div>
+                </div>
             </div>
-            <img src="./assets/images/contact.PNG" alt="">
-        </div>
-        <div class="contact-form">
-            <form action="">
-                <div class="name">
-                    <input type="text" placeholder="Name" id="name">
-                </div>
-                <div class="email">
-                    <input type="text" placeholder="Email" id="email">
-                </div>
-                <div class="phone">
-                    <input type="text" placeholder="Phone number" id="phone">
-                </div>
-                <div class="cv">
-                    <input type="file" title="Your CV" id="cv">
-                </div>
+            <div class="col-12 col-lg-6 contact-form">
+                <form action="">
+                    <div class="name">
+                        <input type="text" placeholder="Name" id="name">
+                    </div>
+                    <div class="email">
+                        <input type="text" placeholder="Email" id="email">
+                    </div>
+                    <div class="phone">
+                        <input type="text" placeholder="Phone number" id="phone">
+                    </div>
+                    <div class="cv">
+                        <input type="file" title="Your CV" id="cv">
+                    </div>
 
-                <div class="textareadiv">
-                    <textarea name="" id="message" cols="30" rows="3" placeholder="Crux of your article"></textarea>
-                </div>
-                <div class="article">
-                    <input type="file" title="Article" id="article">
-                </div>
-                <div class="textareadiv subbut">
-                    <button type="button">Submit</button>
-                </div>
-            </form>
+                    <div class="textareadiv">
+                        <textarea name="" id="message" cols="30" rows="3" placeholder="Crux of your article"></textarea>
+                    </div>
+                    <div class="article">
+                        <input type="file" title="Article" id="article">
+                    </div>
+                    <div class="textareadiv subbut">
+                        <button type="button">Submit</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
     <!-- Section ends -->
@@ -236,129 +274,145 @@
     <footer class="footer-module">
         <div class="address-module">
             <div class="container office-add">
-                <div class="offices uae">
-                    <h4>Beinex - UAE</h4>
-                    <p>506, BB01, Bay Square,</p>
-                    <p> Business Bay,</p>
-                    <p> P. O. Box 82940,</p>
-                    <p> Dubai, United Arab Emirates</p>
-                    <p> Phone: +971 4 243 9494</p>
-                    <p> Mobile: +971 52 695 0068</p>
-                    <p> Email: Info@beinex.com</p>
+                <div class="row">
+                    <div class="col offices uae">
+                        <h6>Beinex - UAE</h6>
+                        <p>506, BB01, Bay Square,</p>
+                        <p> Business Bay,</p>
+                        <p> P. O. Box 82940,</p>
+                        <p> Dubai, United Arab Emirates</p>
+                        <p> Phone: +971 4 243 9494</p>
+                        <p> Mobile: +971 52 695 0068</p>
+                        <p> Email: Info@beinex.com</p>
+                    </div>
+                    <div class="col offices qatar">
+                        <h6>Beinex - Qatar</h6>
+                        <p>Global Business Centre II,</p>
+                        <p>Office No. R19, 2nd floor Al</p>
+                        <p>Hitmi Village, Building No 40,</p>
+                        <p> Cornish Road, Doha, Qatar</p>
+                        <p> P.O Box 25422</p>
+                        <p> Office: +974 44023981</p>
+                        <p> Phone: +974 50682589</p>
+                        <p> Email: info@beinex.qa</p>
+                    </div>
+                    <div class="col offices uk">
+                        <h6>Beinex - United Kingdom</h6>
+                        <p>New Broad Street House</p>
+                        <p> 35 New Broad St</p>
+                        <p> London England EC2M 1NH</p>
+                        <p> Phone: +44 7539 393552</p>
+                        <p> Email: UK@beinex.com</p>
+                    </div>
+                    <div class="col offices india">
+                        <h6>Beinex - India (Kochi)</h6>
+                        <p>#19, Ground Level</p>
+                        <p>Infopark TBC, JNI Stadium</p>
+                        <p>Kaloor, Kochi</p>
+                        <p>Kerala 682017, India</p>
+                        <p>Office: +91 484 4855800</p>
+                        <p>Mobile: +91 920 7204499</p>
+                        <p>Mobile: +91 952 6451099</p>
+                        <p>Email: Info@beinex.com</p>
+                    </div>
+                    <div class="col offices kenya">
+                        <h6>Beinex - Kenya</h6>
+                        <p>Beinex Consulting Ltd</p>
+                        <p> Purshottam Place, 7th floor,</p>
+                        <p> Westlands Rd, Museum Hill</p>
+                        <p> P. O. Box 66217 00800,</p>
+                        <p> Nairobi, Kenya.</p>
+                        <p>Phone: +254 020 515 4016</p>
+                        <p>Email: Info@beinex.com</p>
+                    </div>
                 </div>
-                <div class="offices qatar">
-                    <h4>Beinex - Qatar</h4>
-                    <p>Global Business Centre II,</p>
-                    <p>Office No. R19, 2nd floor Al</p>
-                    <p>Hitmi Village, Building No 40,</p>
-                    <p> Cornish Road, Doha, Qatar</p>
-                    <p> P.O Box 25422</p>
-                    <p> Office: +974 44023981</p>
-                    <p> Phone: +974 50682589</p>
-                    <p> Email: info@beinex.qa</p>
-                </div>
-                <div class="offices uk">
-                    <h4>Beinex - United Kingdom</h4>
-                    <p>New Broad Street House</p>
-                    <p> 35 New Broad St</p>
-                    <p> London England EC2M 1NH</p>
-                    <p> Phone: +44 7539 393552</p>
-                    <p> Email: UK@beinex.com</p>
-                </div>
-                <div class="offices india">
-                    <h4>Beinex - India (Kochi)</h4>
-                    <p>#19, Ground Level</p>
-                    <p>Infopark TBC, JNI Stadium</p>
-                    <p>Kaloor, Kochi</p>
-                    <p>Kerala 682017, India</p>
-                    <p>Office: +91 484 4855800</p>
-                    <p>Mobile: +91 920 7204499</p>
-                    <p>Mobile: +91 952 6451099</p>
-                    <p>Email: Info@beinex.com</p>
-                </div>
-                <div class="offices kenya">
-                    <h4>Beinex - Kenya</h4>
-                    <p>Beinex Consulting Ltd</p>
-                    <p> Purshottam Place, 7th floor,</p>
-                    <p> Westlands Rd, Museum Hill</p>
-                    <p> P. O. Box 66217 00800,</p>
-                    <p> Nairobi, Kenya.</p>
-                    <p>Phone: +254 020 515 4016</p>
-                    <p>Email: Info@beinex.com</p>
-                </div>
+                
             </div>
 
         </div>
 
         <div class="links-module">
             <div class="container newsletter">
-                <div class="news-text">
-                    <h4>Subscribe to our newsletter</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae ac facilisis.</p>
+                <div class="row align-items-center">
+                    <div class="col-6 g-0 news-text">
+                        <h4>Subscribe to our newsletter</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae ac facilisis.</p>
+                    </div>
+                    <div class="col-6 g-0 news-input d-flex justify-content-end">
+                        <input type="text" placeholder="your email address">
+                        <button><i class="fa-solid fa-arrow-right-long"></i></button>
+                    </div>
                 </div>
-                <div class="news-input">
-                    <input type="text" placeholder="your email address">
-                    <button><i class="fa-solid fa-arrow-right-long"></i></button>
-                </div>
+                
             </div>
             <div class="container footerlinks">
-                <div>
-                    <a href="./index.html" title="Beinex"><img src="./assets/images/whitelogo.jpg" width="120px"
-                            height="29px" alt="logo"></a>
-                    <a href="#" title="About Beinex">About Beinex</a>
-                    <a href="#" title="Careers">Careers</a>
-                    <a href="#" title="Press Releases">Press Releases</a>
-                    <a href="#" title="Beinex in the News">Beinex in the News</a>
+                <div class="row justify-content-evenly align-items-start">
+                    <div class="col-sm-4 col-lg-2">
+                        <a href="./index.html" title="Beinex"><img src="./assets/images/whitelogo.jpg" width="120px"
+                                height="29px" alt="logo"></a>
+                        <a href="#" title="About Beinex">About Beinex</a>
+                        <a href="#" title="Careers">Careers</a>
+                        <a href="#" title="Press Releases">Press Releases</a>
+                        <a href="#" title="Beinex in the News">Beinex in the News</a>
+                    </div>
+                    <div class="col-sm-8 col-lg-4 borderdiv">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <p>Our Services</p>
+    
+                                <a href="#" title="Advanced Analytics">Advanced Analytics</a>
+                                <a href="#" title="AI /ML/RPA">AI /ML/RPA</a>
+                                <a href="#" title="Alteryx APA">Alteryx APA</a>
+                                <a href="#" title="Audit Analytics">Audit Analytics</a>
+                                <a href="#" title="Beinex Digital">Beinex Digital</a>
+                                <a href="#" title="Business Intelligence">Business Intelligence</a>
+                            </div>
+                            <div class="col">
+                                <a href="#" title="Competitive Intelligence">Competitive Intelligence</a>
+                                <a href="#" title="Modern Cloud Analytics">Modern Cloud Analytics</a>
+                                <a href="#" title="Risk Analytics">Risk Analytics</a>
+                                <a href="#" title="Tableau">Tableau</a>
+                                <a href="#" title="Tableau Support Services">Tableau Support Services</a>
+                            </div>
+                        </div>
+                     
+                    </div>
+    
+                    <div class="col-sm-4 col-lg-2 borderdiv">
+                        <span>
+                            <p>Our Industries</p>
+                            <a href="#" title="Finance">Finance</a>
+                            <a href="#" title="Human Resources">Human Resources</a>
+                            <a href="#" title="Procurement">Procurement</a>
+                            <a href="#" title="Sales">Sales</a>
+                        </span>
+                    </div>
+                    <div class="col-sm-8 col-lg-4 borderdiv">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <p>Our Partners</p>
+                                <a href="#" title="Tableau">Tableau</a>
+                                <a href="#" title="Alteryx">Alteryx</a>
+                                <a href="#" title="AURAA">AURAA</a>
+                                <a href="#" title="Amazon Web Services">Amazon Web Services</a>
+                            </div>
+                            <div class="col">
+                                <a href="#" title="Microsoft Azure">Microsoft Azure</a>
+                                <a href="#" title="Snowflake">Snowflake</a>
+                                <a href="#" title="Salesforce">Salesforce</a>
+                                <a href="#" title="Alation">Alation</a>
+                            </div>
+                        </div>
+                     
+                    </div>
                 </div>
-                <div class="borderdiv">
-                    <span>
-                        <p>Our Services</p>
 
-                        <a href="#" title="Advanced Analytics">Advanced Analytics</a>
-                        <a href="#" title="AI /ML/RPA">AI /ML/RPA</a>
-                        <a href="#" title="Alteryx APA">Alteryx APA</a>
-                        <a href="#" title="Audit Analytics">Audit Analytics</a>
-                        <a href="#" title="Beinex Digital">Beinex Digital</a>
-                        <a href="#" title="Business Intelligence">Business Intelligence</a>
-                    </span>
-                    <span>
-                        <a href="#" title="Competitive Intelligence">Competitive Intelligence</a>
-                        <a href="#" title="Modern Cloud Analytics">Modern Cloud Analytics</a>
-                        <a href="#" title="Risk Analytics">Risk Analytics</a>
-                        <a href="#" title="Tableau">Tableau</a>
-                        <a href="#" title="Tableau Support Services">Tableau Support Services</a>
-                    </span>
-                </div>
-
-                <div class="borderdiv">
-                    <span>
-                        <p>Our Industries</p>
-                        <a href="#" title="Finance">Finance</a>
-                        <a href="#" title="Human Resources">Human Resources</a>
-                        <a href="#" title="Procurement">Procurement</a>
-                        <a href="#" title="Sales">Sales</a>
-                    </span>
-                </div>
-                <div class="borderdiv">
-                    <span>
-                        <p>Our Partners</p>
-                        <a href="#" title="Tableau">Tableau</a>
-                        <a href="#" title="Alteryx">Alteryx</a>
-                        <a href="#" title="AURAA">AURAA</a>
-                        <a href="#" title="Amazon Web Services">Amazon Web Services</a>
-                    </span>
-                    <span>
-                        <a href="#" title="Microsoft Azure">Microsoft Azure</a>
-                        <a href="#" title="Snowflake">Snowflake</a>
-                        <a href="#" title="Salesforce">Salesforce</a>
-                        <a href="#" title="Alation">Alation</a>
-                    </span>
-                </div>
             </div>
         </div>
 
         <div class="basefooter-module">
-            <div class="baselinks">
+            <div class="container">
+               <div class="baselinks">
                 <a href="#" title="Privacy Policy">Privacy Policy</a>
                 <a href="#" class="blink" title="Terms of Use">Terms of Use</a>
                 <a href="#" class="blink" title="Cookie Policy">Cookie Policy</a>
@@ -370,9 +424,10 @@
                 <a href="#" title="instagram"><i class="fa-brands fa-instagram"></i></a>
             </div>
             <p>Copyright @ 2022 - 23 Beinex</p>
+            </div>
+            
         </div>
     </footer>
-
 
     <!-- Footer ends -->
 

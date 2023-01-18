@@ -6,19 +6,21 @@
     box-shadow: 0 0 10px #000;
 
     hr {
+        margin: 0;
+        padding: 0;
         width: 100%;
         height: 1px;
         background-color: rgba(0, 0, 0, 0.3)
     }
+    ul{
+        margin-bottom: 0;
+    }
+
 }
 
 .top-nav {
-    @include d-container;
-    @include d-flex;
-    justify-content: space-between;
     padding-top: $spacer-md;
     padding-bottom: $spacer-md;
-
     .social-links {
         a {
             font-size: $font-md;
@@ -47,6 +49,9 @@
         }
     }
 
+    .product-links {
+        text-align: right;
+    }
     .listitem {
         list-style: none;
         display: inline-block;
@@ -89,9 +94,6 @@
 }
 
 nav {
-    @include d-container;
-    @include d-flex;
-    justify-content: space-between;
     padding-top: $spacer-md;
     padding-bottom: $spacer-md;
 
@@ -99,34 +101,35 @@ nav {
         width: 150px;
         height: 29px;
     }
-
+    .items{
+        text-align: right;
+    }
     li {
         list-style: none;
         display: inline-block;
         padding: $spacer-1 $spacer-0 $spacer-1 $spacer-2;
-    }
-
-    a {
-        color: $color-primary;
-        text-decoration: none;
-        font-size: $font-md;
-        position: relative;
-
-        &::before {
-            content: '';
-            position: absolute;
-            bottom: $spacer-0;
-            left: $spacer-0;
-            height: 1px;
-            width: 100%;
-            display: inline-block;
-            background-color: $color-primary;
-            transform: scaleX(0);
-            transition: all 0.5s;
-        }
-
-        &:hover::before {
-            transform: scaleX(1);
+        a {
+            color: $color-primary;
+            text-decoration: none;
+            font-size: $font-md;
+            position: relative;
+    
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: $spacer-0;
+                left: $spacer-0;
+                height: 1px;
+                width: 100%;
+                display: inline-block;
+                background-color: $color-primary;
+                transform: scaleX(0);
+                transition: all 0.5s;
+            }
+    
+            &:hover::before {
+                transform: scaleX(1);
+            }
         }
     }
 
@@ -165,7 +168,7 @@ nav {
             height: 100vh;
             background-color: #10385c;
             text-align: center;
-            top: 90px;
+            top: 100px;
             left: -100%;
             padding-top: 50px;
             transition: all 0.5s;
@@ -209,6 +212,7 @@ nav {
 
 @include mobile {
     .top-nav {
+        font-size: $font-xsm;
         .social-links {
             a {
                 padding-right: $spacer-md;

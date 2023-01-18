@@ -1,11 +1,3 @@
-@mixin d-container {
-    width: 100%;
-    max-width: 1250px;
-    margin: auto;
-    padding-left: $spacer-3;
-    padding-right: $spacer-3;
-}
-
 @mixin d-flex {
     display: flex;
     flex-wrap: wrap;
