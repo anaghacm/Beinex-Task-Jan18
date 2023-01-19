@@ -83,8 +83,6 @@
                     </div>
                 </div>
             </div>
-
-
         </nav>
     </header>
     <!-- Header ends -->
@@ -112,7 +110,6 @@
     <section class="writers-module" style="background-image: url('./assets/images/writers.PNG')">
         <div class="writers-content container">
             <div class="row">
-
                 <div class="col col-lg-6 lorem">
                     <p class="lorem-p">LOREM IPSUM</p>
                     <hr>
@@ -124,35 +121,35 @@
                     <p>Virtually anyone:</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col col-lg-6 virtual">
-                    <div>
+            <div class="row virtual">
+                <!-- <div class="col col-lg-6 "> -->
+                    <div class="col-lg-4 col-6">
                         <i class="fa-solid fa-file-pen"></i>
                         <p>Freelance writers</p>
                     </div>
-                    <div>
+                    <div class="col-lg-4 col-6">
                         <i class="fa-solid fa-gear"></i>
                         <p>Independent experts </p>
 
                     </div>
-                    <div>
+                    <div class="col-lg-4 col-6">
                         <i class="fa-solid fa-hand-holding-dollar"></i>
-                        <p>Writers seeking to pocket an <br>
+                        <p>Writers seeking to pocket an
                             extra amount of income</p>
                     </div>
-                    <div>
+                    <div class="col-lg-4 col-6">
                         <i class="fa-brands fa-blogger"></i>
                         <p>Bloggers</p>
                     </div>
-                    <div>
+                    <div class="col-lg-4 col-6">
                         <i class="fa-solid fa-chalkboard-user"></i>
                         <p>Professionals</p>
                     </div>
-                    <div>
+                    <div class="col-lg-4 col-6">
                         <i class="fa-solid fa-person-walking-with-cane"></i>
                         <p>Retired hands</p>
                     </div>
-                </div>
+                <!-- </div> -->
             </div>
         </div>
     </section>
@@ -166,12 +163,22 @@
                         <hr>
                     </div>
                     <h3>What we do Not care about:</h3>
-                    <div class="virtual">
-                        <p><i class="fa-solid fa-users-viewfinder"></i> Your background</p>
-                        <p><i class="fa-solid fa-venus-mars"></i> Your gender </p>
-                        <p><i class="fa-solid fa-globe"></i> Your nationality</p>
-                        <p><i class="fa-solid fa-graduation-cap"></i> Your qualification</p>
-                        <p><i class="fa-solid fa-suitcase"></i> Your employment status</p>
+                    <div class="row virtual">
+                        <div class="col-6 ">
+                            <i class="fa-solid fa-users-viewfinder"></i> Your background
+                        </div>
+                        <div class="col-6 ">
+                            <i class="fa-solid fa-venus-mars"></i> Your gender 
+                        </div>
+                        <div class="col-6 ">
+                            <i class="fa-solid fa-globe"></i> Your nationality
+                        </div>
+                        <div class="col-6 ">
+                            <i class="fa-solid fa-graduation-cap"></i> Your qualification
+                        </div>
+                        <div class="col-6 ">
+                            <i class="fa-solid fa-suitcase"></i> Your employment status
+                        </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
@@ -228,17 +235,17 @@
 
     <section class="contact-module">
         <div class="row g-0">
-            <div class="col-12 col-lg-6 contact-text">
-                <div class="row conttext">
+            <div class="col-12 col-lg-6 contact-text d-flex flex-column justify-content-between">
+                <div class="conttext">
                     <h3>Write for Beinex</h3>
                     <p>Explore writing gig for Cloud, Analytics, Artificial Intelligence, Machine Learning,
                         and Automation. Submit your details below along with your write - up.</p>
                 </div>
-                <div class="row">
-                    <div class="col-12 g-0">
-                        <img src="./assets/images/contact.PNG" alt="">
+                <!-- <div class="row"> -->
+                    <div>
+                        <img class="contactimg" src="./assets/images/contact.PNG" alt="">
                     </div>
-                </div>
+                <!-- </div> -->
             </div>
             <div class="col-12 col-lg-6 contact-form">
                 <form action="">
@@ -252,7 +259,8 @@
                         <input type="text" placeholder="Phone number" id="phone">
                     </div>
                     <div class="cv">
-                        <input type="file" title="Your CV" id="cv">
+                        <input type="file" title="Your CV" id="cv" name="Your CV" accept=".pdf">
+                        <label class="uploaded" for="cv" id="cvupload"></label>
                     </div>
 
                     <div class="textareadiv">
@@ -260,6 +268,8 @@
                     </div>
                     <div class="article">
                         <input type="file" title="Article" id="article">
+                        <label class="uploaded" for="cv" id="articleupload"></label>
+
                     </div>
                     <div class="textareadiv subbut">
                         <button type="button">Submit</button>
@@ -432,5 +442,5 @@
     <!-- Footer ends -->
 
 </body>
-
+<script src="./assets/js/beinex.js"></script>
 </html>

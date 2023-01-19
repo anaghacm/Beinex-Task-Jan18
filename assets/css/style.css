@@ -121,7 +121,7 @@ nav {
     height: 100vh;
     background-color: #10385c;
     text-align: center;
-    top: 100px;
+    top: 85px;
     left: -100%;
     padding-top: 50px;
     transition: all 0.5s; }
@@ -151,6 +151,8 @@ nav {
     font-size: 12px; }
     .top-nav .social-links a {
       padding-right: 5px; }
+    .top-nav .social-links .item-dot {
+      display: none; }
     .top-nav .listitem .btn-schedule {
       padding: 5px; }
     .top-nav .listitem.item-dot {
@@ -164,7 +166,7 @@ nav {
     height: 100vh;
     background-color: #10385c;
     text-align: center;
-    top: 90px;
+    top: 78px;
     left: -100%;
     padding-top: 50px;
     transition: all 0.5s; }
@@ -226,7 +228,8 @@ nav {
   .writers-module .lorem-p {
     font-size: 14px;
     letter-spacing: 2px;
-    padding-right: 20px; }
+    padding-right: 20px;
+    margin-bottom: 0; }
   .writers-module hr {
     height: 1px;
     background-color: #10385b;
@@ -236,17 +239,9 @@ nav {
     font-weight: 600;
     padding-bottom: 30px; }
   .writers-module .virtual {
+    width: 60%;
     padding-top: 30px;
-    justify-content: space-evenly;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding-bottom: 30px;
-    align-items: flex-start; }
-    .writers-module .virtual div {
-      width: 33.33%;
-      padding-bottom: 30px;
-      padding-top: 20px; }
+    justify-content: space-evenly; }
     .writers-module .virtual i {
       font-size: 24px;
       transition: 0.5s; }
@@ -262,7 +257,7 @@ nav {
     padding-bottom: 250px; }
   .dnc-module img {
     width: 100%;
-    height: 100%; }
+    height: auto; }
   .dnc-module .lorem {
     display: flex;
     flex-wrap: wrap;
@@ -271,7 +266,8 @@ nav {
   .dnc-module .lorem-p {
     font-size: 14px;
     letter-spacing: 2px;
-    padding-right: 20px; }
+    padding-right: 20px;
+    margin-bottom: 0; }
   .dnc-module hr {
     height: 1px;
     background-color: #10385b;
@@ -282,15 +278,8 @@ nav {
     padding-bottom: 30px; }
   .dnc-module .virtual {
     padding-top: 30px;
-    width: 100%;
-    font-weight: 600;
-    justify-content: flex-start;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding-bottom: 30px; }
-    .dnc-module .virtual p {
-      width: 50%;
+    font-weight: 600; }
+    .dnc-module .virtual .col-6 {
       padding-bottom: 30px; }
     .dnc-module .virtual i {
       font-size: 24px;
@@ -331,14 +320,14 @@ nav {
 .contact-module .contact-text {
   color: #fff;
   background-color: #4d5d6a; }
-.contact-module img {
-  width: 100%; }
+.contact-module .contactimg {
+  width: 100%;
+  height: auto; }
 .contact-module .conttext {
   width: 100%;
-  max-width: 595px;
-  margin: auto;
-  padding-left: 30px;
-  padding-right: 10px; }
+  max-width: 648px;
+  margin-left: auto;
+  margin-right: 0; }
 .contact-module h3 {
   font-size: 28px;
   font-weight: 600;
@@ -349,10 +338,12 @@ nav {
   font-size: 14px;
   padding-bottom: 30px; }
 .contact-module .contact-form {
-  background-color: #f1f5f8; }
+  background-color: #f1f5f8;
+  padding-top: 60px; }
 .contact-module form {
-  padding: 50px 60px;
-  width: 80%; }
+  margin-left: 50px;
+  width: 100%;
+  max-width: 559px; }
   .contact-module form div {
     position: relative;
     width: 100%;
@@ -391,6 +382,10 @@ nav {
       left: 5px;
       vertical-align: middle;
       color: #000b; }
+  .contact-module form .uploaded {
+    font-size: 12px;
+    display: none;
+    color: red; }
   .contact-module form .textareadiv {
     width: 100%; }
   .contact-module form input {
@@ -430,15 +425,16 @@ nav {
       opacity: 1; }
 .contact-module input[type="file"] {
   background-color: #fff;
-  color: #0000; }
+  color: #0000;
+  appearance: none; }
   .contact-module input[type="file"]::file-selector-button {
     float: right;
     border: 1px solid #0004;
     color: #000a; }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .writers-module .virtual div {
-    width: 50%; }
+  .writers-module .virtual {
+    width: 100%; }
 
   .dnc-module {
     padding-bottom: 300px; }
@@ -446,6 +442,9 @@ nav {
   .nocompromise-module .nocompromise-content {
     margin-top: -90%; } }
 @media (max-width: 767px) {
+  .writers-module .virtual {
+    width: 100%; }
+
   .dnc-module {
     padding-bottom: 50px; }
 
@@ -462,14 +461,29 @@ nav {
   .nocompromise-module .nocompromise-content {
     margin-top: -100%; }
 
-  .contact-module .contact-text {
-    width: 100%; }
   .contact-module .conttext {
-    max-width: 931px; }
-  .contact-module .contact-form {
-    width: 100%; }
+    max-width: 528px;
+    width: 90%; }
   .contact-module form {
-    width: 100%; } }
+    max-width: 439px;
+    width: 80%; } }
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .contact-module .conttext {
+    max-width: 558px; }
+  .contact-module form {
+    max-width: 469px; } }
+@media (min-width: 993px) and (max-width: 1200px) {
+  .contact-module .conttext {
+    max-width: 468px; }
+  .contact-module form {
+    max-width: 379px; } }
+@media (min-width: 768px) and (max-width: 992px) {
+  .contact-module .conttext {
+    max-width: 708px;
+    margin: auto; }
+  .contact-module form {
+    max-width: 619px;
+    margin: auto; } }
 .address-module {
   background-color: #e9e9e9; }
   .address-module .office-add {
@@ -536,6 +550,8 @@ nav {
         width: 80%;
         height: 100%;
         padding-left: 5%; }
+        .links-module .newsletter .news-input input:focus {
+          outline: none; }
       .links-module .newsletter .news-input button {
         width: 50px;
         height: 40px;

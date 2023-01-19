@@ -168,7 +168,7 @@ nav {
             height: 100vh;
             background-color: #10385c;
             text-align: center;
-            top: 100px;
+            top: 85px;
             left: -100%;
             padding-top: 50px;
             transition: all 0.5s;
@@ -217,6 +217,9 @@ nav {
             a {
                 padding-right: $spacer-md;
             }
+            .item-dot{
+                display: none;
+            }
         }
 
         .listitem {
@@ -242,7 +245,7 @@ nav {
             height: 100vh;
             background-color: #10385c;
             text-align: center;
-            top: 90px;
+            top: 78px;
             left: -100%;
             padding-top: 50px;
             transition: all 0.5s;
